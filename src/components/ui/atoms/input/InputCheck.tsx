@@ -1,14 +1,12 @@
 import { FC } from "react";
 
-interface ButtonProps {}
+interface InputCheckProps {}
 
-const Button: FC<ButtonProps> = () => {
+const InputCheck: FC<InputCheckProps> = () => {
 
     return (
-        <button>
-            click
-        </button>
+        <input />
     )
 }
 
-export default Button;
+export default InputCheck;

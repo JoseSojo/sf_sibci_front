@@ -1,14 +1,12 @@
 import { FC } from "react";
 
-interface ButtonProps {}
+interface InputFileProps {}
 
-const Button: FC<ButtonProps> = () => {
+const InputFile: FC<InputFileProps> = () => {
 
     return (
-        <button>
-            click
-        </button>
+        <input />
     )
 }
 
-export default Button;
+export default InputFile;

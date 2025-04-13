@@ -1,10 +1,8 @@
 import { FC, ReactNode } from "react";
+import { TextType } from "../../../../types/ui/text";
 
-interface ParagraphProps {
-    text?: string;
-    customClass?: string;
-    size?: `xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl`;
-    children?: ReactNode;
+interface ParagraphProps extends TextType {
+    children?: ReactNode
 }
 
 const Paragraph: FC<ParagraphProps> = ({ size=`md`, text, customClass,children }) => {

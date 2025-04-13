@@ -1,10 +1,7 @@
 import { FC } from "react";
+import { TextType } from "../../../../types/ui/text";
 
-interface TextProps {
-    text: string;
-    customClass?: string;
-    size?: `xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl`;
-}
+interface TextProps extends TextType {}
 
 const Text: FC<TextProps> = ({ size=`md`, text, customClass }) => {
 

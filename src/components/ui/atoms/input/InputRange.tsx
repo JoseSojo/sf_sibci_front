@@ -1,14 +1,12 @@
 import { FC } from "react";
 
-interface ButtonProps {}
+interface InputRangeProps {}
 
-const Button: FC<ButtonProps> = () => {
+const InputRange: FC<InputRangeProps> = () => {
 
     return (
-        <button>
-            click
-        </button>
+        <input />
     )
 }
 
-export default Button;
+export default InputRange;

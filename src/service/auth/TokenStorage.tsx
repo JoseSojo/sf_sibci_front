@@ -9,4 +9,10 @@ const SetToken = (token: string): string => {
     return token;
 }
 
-export { GetToken, SetToken };
+
+const RemoveToken = () => {
+    window.localStorage.removeItem(`sf_sibci_token`);
+}
+
+
+export { GetToken, SetToken, RemoveToken };

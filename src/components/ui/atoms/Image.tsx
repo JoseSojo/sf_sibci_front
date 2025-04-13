@@ -1,28 +1,25 @@
 import { FC } from "react";
 
-interface TextProps {
-    text: string;
-    customClass?: string;
-    size?: `xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl`;
+interface ImageProps {
+    src: string;
+    alt: string;
+    customClass: string;
+    title?: string;
+    w: number;
+    h: number;
 }
 
-const Text: FC<TextProps> = ({ size=`md`, text, customClass }) => {
+const Image: FC<ImageProps> = ({ alt,customClass,src,title,h,w }) => {
 
-    let cls = ` ${customClass} `
-
-    if(size === `xs`) cls += `text-xs`;
-    else if(size === `sm`) cls += `text-sm`;
-    else if(size === `md`) cls += `text-md`;
-    else if(size === `lg`) cls += `text-lg`;
-    else if(size === `xl`) cls += `text-xl`;
-    else if(size === `2xl`) cls += `text-2xl`;
-    else if(size === `3xl`) cls += `text-3xl`;
-
-    return <span
-        className={` ${cls} `}
-    >
-        { text }
-    </span>
+    
+    return <img
+        src={src}
+        alt={alt}
+        title={title ? title : ``}
+        className={`${customClass}`}
+        width={w}
+        height={h}
+    />
 } 
 
-export default Text;
+export default Image;

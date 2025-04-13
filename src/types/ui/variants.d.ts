@@ -1,0 +1,1 @@
+export type VariantType = `button` | `border` | `bottom` | `link` | `default` | undefined;

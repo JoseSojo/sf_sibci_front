@@ -1,10 +1,7 @@
 import { FC } from "react";
+import { TextType } from "../../../../types/ui/text";
 
-interface TitleProps {
-    text: string;
-    customClass?: string;
-    size?: `xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl`;
-}
+interface TitleProps extends TextType {}
 
 const Title: FC<TitleProps> = ({ size=`md`, text, customClass }) => {
 
